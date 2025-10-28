@@ -1,0 +1,19 @@
+/* week03/custom.css */
+.custom-bg {
+  background-color: #204080 !important;
+  color: #fff !important;
+}
+.custom-bg .navbar-nav .nav-link,
+.custom-bg .navbar-brand,
+.custom-bg .navbar-toggler {
+  color: #fff !important;
+}
+.custom-bg .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #204080 !important;
+  background: #fff !important;
+}
+.custom-bg {
+  background-color: #204080 !important;
+  color: #fff !important;
+}
