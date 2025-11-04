@@ -1,0 +1,3 @@
+git clone https://github.com/louis4843894/web-backend.git
+git config --global user.name "louis4843894"
+git config --global user.email "cvu31161a@gmail.com"
