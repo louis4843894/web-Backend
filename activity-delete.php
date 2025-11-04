@@ -38,16 +38,10 @@ if (!$target) {
 }
 
 
-// 🚫 非管理員只能看到資料（不能刪）
-if ($_SESSION['role'] !== 'M') {
-  echo "<div class='alert alert-danger text-center fs-5 mt-4'>
-          ❌ 您沒有刪除活動的權限！
-        </div>
-        <div class='text-center'>
-          <a href='activity.php' class='btn btn-secondary px-4 mt-3'>返回</a>
-        </div>";
-  require_once "footer.php";
-  exit;
+// 🚫 僅管理員可編輯
+if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'M') {
+  echo '<div class="container mt-5"><div class="alert alert-danger text-center fs-5">❌ 您沒有刪除活動的權限！</div></div>';
+  require_once "footer.php"; exit;
 }
 
 // ✅ 管理員 → 顯示刪除確認表單

@@ -52,6 +52,9 @@ $current = basename($_SERVER['PHP_SELF']);
           <li class="nav-item me-3">
             <a class="nav-link px-2 <?= ($current === 'activity.php') ? 'active' : 'text-white'; ?>" href="activity.php">活動</a>
           </li>
+          <li class="nav-item me-3">
+            <a class="nav-link px-2 <?= ($current === 'user.php') ? 'active' : 'text-white'; ?>" href="user.php">個人資料</a>
+          </li>
         </ul>
       </div>
 

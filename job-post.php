@@ -80,7 +80,8 @@ $result = mysqli_query($conn, $sql);
         <td><?= htmlspecialchars($row["content"]) ?></td>
         <td><?= date('Y-m-d H:i', strtotime($row["pdate"])) ?></td>
         <td>
-          <a href="job-delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">刪除</a>
+          <a href="job-update.php?id=<?=$row["id"]?>" class="btn btn-primary">修改</a>
+          <a href="job-delete.php?id=<?= $row['id'] ?>" class="btn btn-danger">刪除</a>
         </td>
       </tr>
       <?php } ?>
